@@ -1,0 +1,13 @@
+{
+    "author": "Bruno Rocha",
+    "email": "rochacbruno@gmail.com",
+    "github_username": "rochacbruno",
+    "project_name": "A Quokka Module",
+    "repo_name": "quokka_module",
+    "project_short_description": "An awesome Quokka module",
+    "project_url": "http;//github.com/pythonhub",
+    "project_thumbnail": "http://github.com/pythonhhub/images/quokka.png",
+    "release_date": "2013-10-14",
+    "year": "2013",
+    "version": "0.1.0"
+}
