@@ -1,7 +1,7 @@
 quokka-{{cookiecutter.repo_name}}
 ==================
 
-# {{cookiecutter.projet_name}} | Version {{ cookiecutter.version }}
+# {{cookiecutter.project_name}} | Version {{ cookiecutter.version }}
 
 {{cookiecutter.project_short_description}}  
 
