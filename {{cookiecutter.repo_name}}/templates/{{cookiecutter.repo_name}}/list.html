@@ -1,9 +1,10 @@
+{% raw %}
 {% import theme('_menu.html') as menu with context -%}
 {% extends theme("base.html") %}
 
 {% block content %}
 <div class="large-8 columns">
-    {% for content in {{cookiecutter.repo_name}}s %}
+    {% for content in {% endraw %}{{cookiecutter.repo_name}}{% raw %}s %}
       <h2><a href="{{ content.get_absolute_url() }}">{{ content.title }}</a></h2>
         {% if content.summary %}
            <p>{{ content.summary|truncate(255)|safe() }}</p>
@@ -18,3 +19,4 @@
     </div>
 </div>
 {% endblock %}
+{% endraw %}
