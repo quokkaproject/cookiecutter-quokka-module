@@ -14,7 +14,7 @@ logger = logging.getLogger()
 class ListView(MethodView):
 
     def get(self):
-        logger.info('getting list of posts')
+        logger.info('getting list of {{cookiecutter.repo_name}}')
         {{cookiecutter.repo_name}}s = {{cookiecutter.repo_name|title}}.objects.all()
         return render_template('{{cookiecutter.repo_name}}/list.html', {{cookiecutter.repo_name}}s={{cookiecutter.repo_name}}s)
 
