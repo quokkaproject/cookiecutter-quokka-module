@@ -4,6 +4,6 @@ from quokka.core.db import db
 from quokka.core.models import Content
 
     
-class Campaign(Content):
-    body = db.StringField(required=True)
+class {{cookiecutter.repo_name|title}}(Content):
+    "a {{cookiecutter.repo_name}} basic model"
     
