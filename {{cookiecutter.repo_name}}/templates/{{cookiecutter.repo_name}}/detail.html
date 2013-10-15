@@ -1,19 +1,21 @@
+{% raw %}
 {% extends theme("base.html") %}
 
 {% block page_header %}
 <div class="large-12 columns">
   <div class="page-header">
-    <h1>{{ {{cookiecutter.repo_name}}.title }}</h1>
+    <h1> {{ {% endraw % } {{cookiecutter.repo_name}}.title  {% raw %} }}</h1>
   </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="large-12 columns">
-  {% if {{cookiecutter.repo_name}}.body %}
+  {% if {% endraw %}{{cookiecutter.repo_name}}{% raw %}.body %}
     <p>{{ content.body|safe() }}</p>
   {% endif %}
 
   <p>{{ content.created_at.strftime('%H:%M %Y-%m-%d') }}</p>
 </div>
 {% endblock %}
+{% endraw %}
