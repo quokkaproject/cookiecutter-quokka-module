@@ -1,7 +1,7 @@
 # coding: utf-8
 
-from flask import Blueprint
-module = Blueprint("{{cookiecutter.repo_name}}", __name__, template_folder="templates")
+from quokka.core.app import QuokkaModule
+module = QuokkaModule("{{cookiecutter.repo_name}}", __name__, template_folder="templates")
 
 # Register the urls if needed
 # from .views import ListView, DetailView
