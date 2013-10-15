@@ -5,8 +5,11 @@ Cookiecutter template for a quokka module. See https://github.com/audreyr/cookie
 
 # Usage
 
+```cd quokka/modules```
 
-```cookiecutter https://github.com/pythonhub/cookiecutter-quokka-module```
+```cookiecutter https://github.com/pythonhub/cookiecutter-quokka-module.git```
+
+Answer the questions to configure your new module (do not forget to fill the repo_name it will be used as module name)
 
 Then  
 
