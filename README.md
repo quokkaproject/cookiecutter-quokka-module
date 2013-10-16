@@ -15,3 +15,7 @@ Then
 
 - Create a repo and put it there
 - Register in Quokka App store
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pythonhub/cookiecutter-quokka-module/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
