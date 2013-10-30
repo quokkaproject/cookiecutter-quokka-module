@@ -4,6 +4,7 @@
     "github_username": "rochacbruno",
     "project_name": "A Quokka Module",
     "module_name": "mymodule",
+    "repo_name": "mymodule",
     "project_short_description": "An awesome Quokka module",
     "project_url": "http://github.com/pythonhub/mymodule",
     "project_thumbnail": "http://github.com/pythonhhub/images/quokka.png",
