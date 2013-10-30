@@ -4,18 +4,18 @@
 
 {% block content %}
 <div class="large-8 columns">
-    {% for content in {% endraw %}{{cookiecutter.repo_name}}{% raw %}s %}
+    {% for content in {% endraw %}{{cookiecutter.module_name}}{% raw %}s %}
       <h2><a href="{{ content.get_absolute_url() }}">{{ content.title }}</a></h2>
-        {% if content.summary %}
-           <p>{{ content.summary|truncate(255)|safe() }}</p>
-        {% endif %}
+	{% if content.summary %}
+	   <p>{{ content.summary|truncate(255)|safe() }}</p>
+	{% endif %}
     {% endfor %}
 </div>
 
 <div class="large-4 columns">
     <div class="channel-menu">
     <h3>Channels</h3>
-        {{ menu.build_nodes(nodes=channels) }}
+	{{ menu.build_nodes(nodes=channels) }}
     </div>
 </div>
 {% endblock %}

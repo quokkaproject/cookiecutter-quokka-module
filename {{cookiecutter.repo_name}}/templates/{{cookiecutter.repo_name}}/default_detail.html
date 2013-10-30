@@ -4,14 +4,14 @@
 {% block page_header %}
 <div class="large-12 columns">
   <div class="page-header">
-    <h1> {{ {% endraw %} {{cookiecutter.repo_name}}.title  {% raw %} }}</h1>
+    <h1> {{ {% endraw %} {{cookiecutter.module_name}}.title  {% raw %} }}</h1>
   </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="large-12 columns">
-  {% if {% endraw %}{{cookiecutter.repo_name}}{% raw %}.body %}
+  {% if {% endraw %}{{cookiecutter.module_name}}{% raw %}.body %}
     <p>{{ content.body|safe() }}</p>
   {% endif %}
 

@@ -6,5 +6,5 @@ celery = create_celery_app()
 
 
 @celery.task
-def {{cookiecutter.repo_name}}_task():
+def {{cookiecutter.module_name}}_task():
     print "Doing something async..."

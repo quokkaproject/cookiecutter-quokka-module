@@ -1,13 +1,13 @@
 # coding : utf -8
-from flask.ext.htmlbuilder import html
-from flask.ext.admin.babel import lazy_gettext
+# from flask.ext.htmlbuilder import html
+# from flask.ext.admin.babel import lazy_gettext
 from quokka import admin
 from quokka.core.admin.models import ModelAdmin
 
-from .models import {{cookiecutter.repo_name|title}}
+from .models import {{cookiecutter.module_name|title}}
 
 
-class {{cookiecutter.repo_name|title}}Admin(ModelAdmin):
+class {{cookiecutter.module_name|title}}Admin(ModelAdmin):
     """
     All attributes added here for example
     more info in admin source
@@ -84,4 +84,4 @@ class {{cookiecutter.repo_name|title}}Admin(ModelAdmin):
     #}
 
 
-admin.register({{cookiecutter.repo_name|title}}, {{cookiecutter.repo_name|title}}Admin, category="{{cookiecutter.repo_name|title}}")
+admin.register({{cookiecutter.module_name|title}}, {{cookiecutter.module_name|title}}Admin, category="{{cookiecutter.module_name|title}}")
