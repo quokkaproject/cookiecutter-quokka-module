@@ -1,5 +1,7 @@
 # coding: utf-8
 
+from __future__ import print_function
+
 from flask.ext.script import Command, Option
 from .models import {{cookiecutter.module_name|title}}
 
