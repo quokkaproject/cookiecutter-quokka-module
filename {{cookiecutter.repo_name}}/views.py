@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#from flask import request
 from flask.views import MethodView
 from quokka.core.templates import render_template
 
 from .models import {{cookiecutter.module_name|title}}
 
 import logging
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 class ListView(MethodView):
